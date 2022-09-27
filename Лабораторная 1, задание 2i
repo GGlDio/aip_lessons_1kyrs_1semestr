@@ -1,0 +1,14 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    int a,p,s;
+    std::cout<<"a: ";
+    std::cin>>a;
+    p=a*8;
+    s=2*(1+sqrt(2))*(a*a);
+    std::cout<<"P: "<<p<<std::endl;
+    std::cout<<"S: "<<s<<std::endl;
+}
