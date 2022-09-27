@@ -1,0 +1,13 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int num,kvadrat,kyb;
+    kvadrat=num*num;
+    kyb=num*num*num;
+    std::cout<<"4islo: "<<num;
+    std::cout<<"Kvadrat: "<<kvadrat;
+    std::cout<<"Kyb: "<<kyb;
+}
