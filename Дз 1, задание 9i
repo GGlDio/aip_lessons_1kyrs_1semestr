@@ -1,0 +1,13 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float week,hour,day;
+    std::cin>>week;
+    std::cout<<"Week: "<<week<<std::endl;
+    hour=week*24;
+    day=hour/24;
+    std::cout<<"Day: "<<day<<std::endl;
+}
