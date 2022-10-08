@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float a,b,result,full,ostatok;
+    std::cout<<"First: "<<std::endl;
+    std::cin>>a;
+    std::cout<<"Second: "<<std::endl;
+    std::cin>>b;
+    result=a/b;
+    full=(int)result;
+    std::cout<<"Result: "<<result<<std::endl;
+    std::cout<<"Celoe chislo: "<<full<<std::endl;
+    ostatok=result-full;
+    std::cout<<"Ostok: "<<ostatok<<std::endl;
+}
