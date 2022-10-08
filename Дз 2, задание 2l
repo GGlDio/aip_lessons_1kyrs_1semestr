@@ -1,0 +1,28 @@
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+    float dx, xf, x;
+    float f;
+
+    std::cout<<"Solve function. \nEnter dx: ";
+    std::cin>>dx;
+    std::cout << "Enter x0: ";
+    std::cin >> x;
+    std::cout << "Enter xf: ";
+    std::cin >> xf;
+
+    std::cout << "\tx\t\ty" << std::endl;
+    std::cout.precision(5);
+
+    while (x < xf) {
+        f = sqrt(5*x+4*x*x*x)+4*x+3/sin(9*x+71);
+        std::cout<<"\t"<<x<<"\t\t"<<f<<std::endl;
+        x+=dx;
+    }
+    return 0;
+}
