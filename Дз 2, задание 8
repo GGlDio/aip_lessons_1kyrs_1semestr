@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float kolvo,diametr,stenki,volume,radius,poverx;
+    std::cout<<"Kolichestvo: "<<"\tDiametr (cm): "<<"\tStenki (tolshina, mm): "<<std::endl;
+    std::cin>>kolvo>>diametr>>stenki;
+    radius=diametr/2;
+    stenki=stenki*0.01;
+    poverx=4*3,14*radius*radius*stenki;
+    volume=kolvo*(4/3*3.14*radius*radius*radius-poverx);
+    std::cout<<"Result (cm^3): "<<volume;
+
+    std::getchar();
+    std::getchar();
+}
