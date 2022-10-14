@@ -1,0 +1,20 @@
+#include <iostream>
+
+int main()
+{
+    float N,M,Shag,Kolvo,NM,Shag_chislo,current;
+    std::cout<<"N: "<<"M: "<<"Shag: "<<std::endl;
+    std::cin>>N>>M>>Shag;
+    NM=M-N;
+    Kolvo=NM/Shag;
+    Shag_chislo=NM/Kolvo;
+    current=N;
+    std::cout<<"Result: "<<std::endl;
+    while (current<=M) {
+        std::cout<<current<<"\t";
+        current=current+Shag_chislo;
+    }
+
+    std::getchar();
+    std::getchar();
+}
