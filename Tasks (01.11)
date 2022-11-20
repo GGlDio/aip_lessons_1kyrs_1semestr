@@ -1,0 +1,49 @@
+#include <iostream>
+#include <cmath>
+
+/*float func(float x,float y){
+    float func;
+    func=sqrt(x)+y;
+    return func;
+}*/
+/*float func(float x){
+    float func;
+    func=sqrt(1-sin(x)*sin(x));
+    return func;
+}*/
+/*float func(float a,float b,float c,float x){
+    float func;
+    func=1/sqrt(a*x*x+b*x+c);
+    return func;
+}*/
+float func(float h1,float h2,float a1,float a2,float b1,float b2){
+    float func,bokovaya1,bokovaya2;
+    bokovaya1=sqrt(h1+((b1-a1)/2));
+    bokovaya2=sqrt(h2+((b2-a2)/2));
+    func=(bokovaya1*2+a1+b1)+(bokovaya2*2+a2+b2);
+    return func;
+}
+
+
+int main()
+{
+    /*float num1,num2;
+    std::cout<<"X:\n"<<"Y:\n";
+    std::cin>>num1>>num2;
+    std::cout<<func(num1,num2);*/
+
+    /*float num1;
+    std::cout<<"X:/n";
+    std::cin>>num1;
+    std::cout<<func(num1);*/
+
+    /*float num1,zn1,zn2,zn3;
+    std::cout<<"X:\t"<<"a:\t"<<"b:\t"<<"c:\t"<<std::endl;
+    std::cin>>num1>>zn1>>zn2>>zn3;
+    std::cout<<func(num1,zn1,zn2,zn3);*/
+
+    float visota1,visota2,storona_men_1,storona_men_2,storona_bol_1,storona_bol_2;
+    std::cout<<"Visota 1,2: /n"<<"Menshaya storona 1,2: /n"<<"Bolshaya storona 1,2: /n"<<std::endl;
+    std::cin>>visota1>>visota2>>storona_men_1>>storona_men_2>>storona_bol_1>>storona_bol_2;
+    std::cout<<func(visota1,visota2,storona_men_1,storona_men_2,storona_bol_1,storona_bol_2);
+}
