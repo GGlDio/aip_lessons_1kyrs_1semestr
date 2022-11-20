@@ -1,0 +1,141 @@
+#include <iostream>
+#include <string>
+
+int main()
+{
+/*int a,b,i;  //3
+std::cout<<"Chislo A, chislo B"<<std::endl;
+std::cin>>a>>b;
+i=a;
+
+while (i<=b){
+    std::cout<<i<<std::endl;
+    i++;
+}*/
+
+/*int n,m,i=0;  //4
+std::cout<<"Chislo H, kolvo raz M"<<std::endl;
+std::cin>>n>>m;
+
+while (i<m){
+    std::cout<<n<<" ";
+    i++;
+}*/
+
+/*float vrem,kon,i=0,h=1.8;  //5.5(a)
+std::cout<<"Chislo na4alnoe: ";
+std::cin>>i;
+kon=i-12;
+
+while (i>kon){
+    std::cout<<i<<" ";
+    vrem=i-h;
+    std::cout<<vrem<<" "<<std::endl;
+    i--;
+}*/
+
+/*float vrem1,vrem2,kon,i=0,h1=0.5,h2=0.3;  //5.5(b)
+std::cout<<"Chislo na4alnoe: ";
+std::cin>>i;
+kon=i-21;
+
+while (i>kon){
+    std::cout<<i<<" ";
+    vrem1=i-h1;
+    std::cout<<vrem1<<" ";
+    vrem2=vrem1-h2;
+    std::cout<<vrem2<<std::endl;
+    i--;
+} */
+
+/*int n,i=1;   //6.2
+std::cout<<"Chislo n: ";
+std::cin>>n;
+
+while (i<=n){
+    std::cout<<i<<" ";
+    i++;
+}*/
+
+/*int i=11,vrem;   //6.3
+
+while (i>10 && i<100){
+    vrem=i;
+    if (vrem%2==0){
+    } else std::cout<<vrem<<std::endl;
+    i++;
+}*/
+
+/*int chislo=191;   //6.4
+
+while (chislo>190){
+    if (chislo%2==0){
+        std::cout<<"Naimenshee 4islo: "<<chislo<<std::endl;
+        break;
+    } chislo++;
+}*/
+
+/*int chislo=4999;   //6.5
+
+while (chislo<5000){
+    if (chislo%2==0){
+        std::cout<<"Naibolshee 4islo: "<<chislo<<std::endl;
+        break;
+    } chislo--;
+}*/
+
+/*int chislo,factorial=1,i=1;   //6.6
+std::cout<<"Chislo: ";
+std::cin>>chislo;
+
+while (i<=chislo){
+    factorial=factorial*i;
+    i++;
+} std::cout<<"Factorial: "<<factorial; */
+
+/*float n,i=0,kvadrat=0;    //6.7
+std::cout<<"Chislo n: ";
+std::cin>>n;
+
+while (kvadrat<=n){
+    kvadrat=i*i;
+    std::cout<<i<<" "<<std::endl;
+    i++;
+}*/
+
+/*int chislo,i,kvadrat;   //6.8
+std::cout<<"Chislo n: ";
+std::cin>>chislo;
+
+while (chislo<100){
+    kvadrat=i*i;
+    if (kvadrat>chislo){
+        std::cout<<"Chislo: "<<i<<" ";
+        break;
+    } i++;
+}*/
+
+/*int chislo;    //6.9
+while (true){
+    std::cout<<"Vvedite 4etnoe 4islo: ";
+    std::cin>>chislo;
+    if (chislo%2==0) {
+        std::cout<<"4etnoe =)\n\n"<<std::endl;
+        break;
+    } else std::cout<<"Povtorite popitky\n\n";
+}*/
+
+int parol,vvod;
+std::cout<<"New password: ";
+std::cin>>parol;
+
+while (true){
+    std::cout<<"Enter your password: ";
+    std::cin>>vvod;
+    if (vvod==parol){
+        std::cout<<"Hello, user!";
+        break;
+    } else std::cout<<"Repeat";
+}
+
+}
