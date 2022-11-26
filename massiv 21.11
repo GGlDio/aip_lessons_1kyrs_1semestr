@@ -1,0 +1,78 @@
+#include <iostream>
+#include <array>
+#include <vector>
+
+
+int main(){
+
+    /*size_t N;  //array9
+    std::cout<<"N - razmer massiva. N: ";
+    std::cin>>N;
+    std::vector<int> massiv(N);
+    int i,current,kolvo;
+    kolvo=0;
+    //std::array<int,5> massiv;
+
+    for (i=0;i<N;i++){
+        std::cout<<i+1<<". Zna4enie: ";
+        std::cin>>massiv[i];
+        std::cout<<std::endl;
+    }
+
+    for (i=N-1;i>=0;i--){
+        if (massiv[i]%2==0) {
+            std::cout<<i<<". 4etnoe: "<<massiv[i]<<std::endl;
+            kolvo++;
+        } else std::cout<<i<<". Ne4etnoe"<<std::endl;
+
+    } std::cout<<"Kolvo 4etnix : "<<kolvo<<std::endl;*/
+
+    /*size_t N;  //array10
+    std::cout<<"N - razmer massiva. N: ";
+    std::cin>>N;
+    std::vector<int> massiv(N);
+    int i,current;
+    //std::array<int,5> massiv;
+
+    for (i=0;i<N;i++){
+        std::cout<<i+1<<". Zna4enie: ";
+        std::cin>>massiv[i];
+        std::cout<<std::endl;
+    }
+
+    for (i=0;i<N;i++){
+        if (massiv[i]%2==0) {
+            std::cout<<i<<". 4etnoe: "<<massiv[i]<<std::endl;
+        }
+    }
+
+    std::cout<<"--------------------"<<std::endl;
+
+    for (i=N-1;i>=0;i--){
+        if (massiv[i]%2==1){
+            std::cout<<i<<". Ne4etnoe: "<<massiv[i]<<std::endl;
+        }
+    }*/
+
+    size_t N;  //array11
+    std::cout<<"N - razmer massiva. N: ";
+    std::cin>>N;
+    std::vector<int> massiv(N);
+    int i,current,K;
+    std::cout<<"K - celoe 4islo (4islo, kotoromy bydyt vivoditsa kranie 4isla iz massiva. K: "<<std::endl;
+    std::cin>>K;
+    //std::array<int,5> massiv;
+
+    for (i=0;i<N;i++){
+        std::cout<<i+1<<". Zna4enie: ";
+        std::cin>>massiv[i];
+        std::cout<<std::endl;
+    }
+
+    for (i=0;i<N;i++){
+        if (massiv[i]%K==0){
+            std::cout<<"4islo, kratnoe K ("<<i<<"): "<<i<<std::endl;
+        }
+    }
+
+}
