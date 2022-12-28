@@ -1,0 +1,22 @@
+#include <iostream>
+#include <array>
+
+int main()
+{
+    int i,proizvedenie_pol,proizvedenie_otriz;
+    std::array<int, 5> Massiv;
+    std::cout<<"Massiv with random number: "<<std::endl;
+    proizvedenie_pol=1;
+    proizvedenie_otriz=1;
+    for (i=0;i<5;i++){
+        Massiv[i]=rand()%80+(-40);
+        std::cout<<Massiv[i]<<std::endl;
+    }
+    for (i=0;i<5;i++){
+        if (Massiv[i]>0){
+            proizvedenie_pol=proizvedenie_pol*Massiv[i];
+        } else proizvedenie_otriz=proizvedenie_otriz*Massiv[i];
+    }
+    std::cout<<"Proizvedenie - zna4: "<<proizvedenie_otriz<<std::endl;
+    std::cout<<"Proizvedenie + zna4: "<<proizvedenie_pol<<std::endl;
+}
