@@ -1,0 +1,36 @@
+#include <iostream>
+#include <array>
+
+struct Passengers_luggage{
+    int amount;
+    float weight;
+};
+
+int main()
+{
+    int N,i,number_amount,number_weight,amount,weight;
+    std::cout<<"Amount of passenger"<<std::endl;
+    std::cin>>N;
+    Passengers_luggage Luggages[N];
+    std::cout<<"Specification of passangers luggage: "<<std::endl<<"--------------"<<std::endl;
+    for (i=0;i<N;i++){
+        std::cout<<i+1<<" passenger luggage: "<<std::endl;
+        Luggages[i].amount=rand()%10;
+        Luggages[i].weight=rand()%150;
+        std::cout<<"Amount of luggage = "<<Luggages[i].amount<<std::endl;
+        std::cout<<"General weight of luggage one passenger = "<<Luggages[i].weight<<std::endl;
+        std::cout<<"---------------------"<<std::endl;
+    }
+    for (i=0;i<N;i++){
+        if (Luggages[i].amount>amount){
+            number_amount=i;
+            amount=Luggages[i].amount;
+        }
+        if (Luggages[i].weight>weight){
+            number_weight=i;
+            amount=Luggages[i].weight;
+        }
+    }
+    std::cout<<"Passenger has the largest amount of luggage: "<<number_amount+1<<" Amount: "<<amount<<std::endl;
+    std::cout<<"Passenger has the biggest weight of luggage: "<<number_weight+1<<" Weight: "<<weight<<std::endl;
+}
