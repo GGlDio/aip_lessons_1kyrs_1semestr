@@ -1,0 +1,21 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+float TimeToHMS(int T){
+    float H,M;
+    H = (T/60)/60;
+    std::cout<<"Time T in hours: "<<H<<std::endl;
+    M = T/60;
+    std::cout<<"Time T in minutes: "<<M<<std::endl;
+    std::cout<<"Time T in seconds: "<<T<<std::endl;
+}
+
+int main()
+{
+    int T;
+    std::cout<<"Enter time T (seconds): "<<std::endl;
+    std::cin>>T;
+    TimeToHMS(T);
+}
