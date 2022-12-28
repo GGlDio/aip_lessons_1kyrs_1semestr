@@ -1,0 +1,22 @@
+#include <iostream>
+#include <array>
+
+int main()
+{
+    int i,summ_pol,summ_otriz;
+    std::array<int, 5> Massiv;
+    std::cout<<"Massiv with random number: "<<std::endl;
+    summ_pol=0;
+    summ_otriz=0;
+    for (i=0;i<5;i++){
+        Massiv[i]=rand()%80+(-40);
+        std::cout<<Massiv[i]<<std::endl;
+    }
+    for (i=0;i<5;i++){
+        if (Massiv[i]>0){
+            summ_pol=summ_pol+Massiv[i];
+        } else summ_otriz=summ_otriz+Massiv[i];
+    }
+    std::cout<<"Summa - zna4: "<<summ_otriz<<std::endl;
+    std::cout<<"Summa + zna4: "<<summ_pol<<std::endl;
+}
