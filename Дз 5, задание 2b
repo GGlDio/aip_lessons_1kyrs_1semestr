@@ -1,0 +1,16 @@
+
+int main()
+{
+    int i,summ;
+    std::array<int, 5> Massiv;
+    std::cout<<"Massiv with random number: "<<std::endl;
+    summ=0;
+    for (i=0;i<5;i++){
+        Massiv[i]=rand()%40;
+        std::cout<<Massiv[i]<<std::endl;
+        if ((Massiv[i]<3) or (Massiv[i]<20 and Massiv[i]>9)){
+            summ=summ+Massiv[i];
+        }
+    }
+    std::cout<<"Summa: "<<summ<<std::endl;
+}
