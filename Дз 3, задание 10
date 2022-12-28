@@ -1,0 +1,27 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int Quarter(float x, float y){
+    if (x>0 && y>0){
+        std::cout<<"It's I coordinate quarter"<<std::endl;
+    }
+    if (x>0 && y<0){
+        std::cout<<"It's II coordinate quarter"<<std::endl;
+    }
+    if (x<0 && y>0){
+        std::cout<<"It's III coordinate quarter"<<std::endl;
+    }
+    if (x<0 && y<0){
+        std::cout<<"It's IV coordinate quarter"<<std::endl;
+    }
+}
+
+int main()
+{
+    float x,y;
+    std::cout<<"Enter coordinates of dot: "<<std::endl;
+    std::cin>>x>>y;
+    Quarter(x,y);
+}
