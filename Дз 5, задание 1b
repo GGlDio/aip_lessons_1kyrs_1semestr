@@ -1,0 +1,13 @@
+#include <iostream>
+#include <array>
+
+int main()
+{
+    int i;
+    std::array<int, 5> Massiv;
+    std::cout<<"Massiv with random number: "<<std::endl;
+    for (i=0;i<5;i++){
+        Massiv[i]=10+rand()%(20-10+1);
+        std::cout<<Massiv[i]<<std::endl;
+    }
+}
