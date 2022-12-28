@@ -1,0 +1,19 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int Vichislenie(int p,int a,int s){
+    p=a*8;
+    s=2*(1+sqrt(2))*(a*a);
+    std::cout<<"P: "<<p<<std::endl;
+    std::cout<<"S: "<<s<<std::endl;
+}
+
+int main()
+{
+    int a,p,s;
+    std::cout<<"a: ";
+    std::cin>>a;
+    Vichislenie(p,a,s);
+}
