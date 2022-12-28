@@ -1,0 +1,41 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+float Function_tabul(float x, float dx){
+    float y;
+    std::cout<<"x: "<<"\ty: "<<std::endl;
+    if (x>5){
+        y=2*x*x+10;
+        if (!x)
+            std::cout<<x<<"\t-"<<std::endl;
+        else
+            std::cout<<x<<"\t"<<y<<std::endl;
+        x+=dx;
+    }
+    if (x=0){
+        y=0;
+        if (!x)
+            std::cout<<x<<"\t-"<<std::endl;
+        else
+            std::cout<<x<<"\t"<<y<<std::endl;
+        x+=dx;
+    }
+    if (x<5){
+        y=2*abs(x+7)-x*x;
+        if (!x)
+            std::cout<<x<<"\t-"<<std::endl;
+        else
+            std::cout<<x<<"\t"<<y<<std::endl;
+        x+=dx;
+    }
+}
+
+int main()
+{
+    float x, dx;
+    std::cout<<"Enter x, dx: "<<std::endl;
+    std::cin>>x>>dx;
+    Function_tabul(x, dx);
+}
