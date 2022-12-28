@@ -1,0 +1,27 @@
+#include <iostream>
+#include <array>
+
+int main()
+{
+    int i;
+    std::array<int, 5> Massiv_A;
+    std::array<int, 5> Massiv_B;
+    std::array<int, 5> Massiv_new;
+    std::cout<<"Massiv with random number: "<<std::endl;
+    for (i=0;i<5;i++){
+        Massiv_A[i]=rand()%80+(-40);
+        std::cout<<Massiv_A[i]<<std::endl;
+    }
+    std::cout<<"-----------------"<<std::endl;
+    std::cout<<"Massiv with random number: "<<std::endl;
+    for (i=0;i<5;i++){
+        Massiv_B[i]=rand()%80+(-40);
+        std::cout<<Massiv_B[i]<<std::endl;
+    }
+    std::cout<<"-----------------"<<std::endl;
+    std::cout<<"New massiv of 2 others: "<<std::endl;
+    for (i=0;i<5;i++){
+        Massiv_new[i]=Massiv_A[i]-Massiv_B[i];
+        std::cout<<Massiv_new[i]<<std::endl;
+    }
+}
