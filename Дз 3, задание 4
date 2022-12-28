@@ -1,0 +1,26 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+float SwapXY(float x, float y){
+    float current1,current2;
+    current1=x;
+    current2=y;
+    x=current2;
+    y=current1;
+    std::cout<<x<<" and "<<y;
+}
+
+int main()
+{
+    int A,B,C,D;
+    std::cout<<"Enter A, B, C and D: "<<std::endl;
+    std::cin>>A>>B>>C>>D;
+    std::cout<<"New value A and B: "<<std::endl;
+    SwapXY(A,B);
+    std::cout<<std::endl;
+    std::cout<<"New value C and D: "<<std::endl;
+    SwapXY(C,D);
+    std::cout<<std::endl;
+}
